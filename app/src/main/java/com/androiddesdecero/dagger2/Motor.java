@@ -9,11 +9,11 @@ public class Motor {
     private String tipoMotor;
 
     public Motor(String tipoMotor) {
-        this.tipoMotor = tipoMotor;
+        this.tipoMotor = tipoMotor;//5,//7
     }
 
     public String getTipoMotor(){
-        return ("Motor: "+tipoMotor);
+        return ("Motor: "+tipoMotor);//11,//14
     }
 
 }

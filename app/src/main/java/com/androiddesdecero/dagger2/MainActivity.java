@@ -23,9 +23,9 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        ((MotorAplication)getApplication()).getMotorComponent().inject(this);
-        Toast.makeText(MainActivity.this, motor.getTipoMotor(), Toast.LENGTH_SHORT).show();
-        Toast.makeText(MainActivity.this, coche.getMotor(), Toast.LENGTH_SHORT).show();
+        ((MotorAplication)getApplication()).getMotorComponent().inject(this);//2
+        Toast.makeText(MainActivity.this, motor.getTipoMotor(), Toast.LENGTH_SHORT).show();//10
+        Toast.makeText(MainActivity.this, coche.getMotor(), Toast.LENGTH_SHORT).show();//12
 
     }
 }

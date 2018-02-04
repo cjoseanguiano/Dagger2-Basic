@@ -20,17 +20,17 @@ public class MotorModule {
     @Named("diesel")
     @Provides
     public Motor providesMotorDiesel(){
-        return new Motor("diesel");
+        return new Motor("diesel");//6
     }
 
     @Named("gasolina")
     @Provides
     public Motor providesMotorGasolina(){
-        return new Motor("gasolina");
+        return new Motor("gasolina");//4
     }
 
     @Provides
     public Coche providesCoche(@Named("diesel")Motor motor){
-        return new Coche(motor);
+        return new Coche(motor);//8
     }
 }

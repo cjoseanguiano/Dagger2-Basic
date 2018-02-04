@@ -14,10 +14,10 @@ public class MotorAplication extends Application{
     public void onCreate(){
         super.onCreate();
 
-        motorComponent = DaggerMotorComponent.builder().motorModule(new MotorModule()).build();
+        motorComponent = DaggerMotorComponent.builder().motorModule(new MotorModule()).build();//1
     }
 
     public MotorComponent getMotorComponent(){
-        return motorComponent;
+        return motorComponent;//3
     }
 }

@@ -9,11 +9,11 @@ public class Coche {
     private Motor motor;
 
     public Coche(Motor motor) {
-        this.motor = motor;
+        this.motor = motor;//9
     }
 
     public String getMotor(){
-        return ("Coche con "+motor.getTipoMotor());
+        return ("Coche con "+motor.getTipoMotor());//13
     }
 
 }
